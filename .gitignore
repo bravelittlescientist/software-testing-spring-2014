@@ -1,0 +1,17 @@
+# Eclipse project files
+.classpath
+.project
+
+# IntelliJ Project Files
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+
+# Java and JUnit
+*.class
+*.war
+*.ear
+.project
+.settings
