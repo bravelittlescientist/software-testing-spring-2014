@@ -52,6 +52,23 @@ public class EugeniaGabrielov {
      * @return shifted, a string representing full name shifted by shift.
      */
     public String getRotatedFullName(int shift) {
-        return getFullName();
+        // Grab local copy of full name
+        String toRotate = getFullName();
+
+        // Handle out of bound error by taking mod: this way the string can wrap fully around as many times as needed.
+        shift = shift % toRotate.length();
+
+        // Figure out where to split!
+        int splitAt = 0;
+
+        // If positive: rotate left by splitting after shift characters
+        // If negative: rotate right by splitting at name length + shift
+        if (shift >= 0) {
+            splitAt = shift;
+        } else {
+            splitAt = toRotate.length() + shift;
+        }
+
+        return toRotate.substring(splitAt) + toRotate.substring(0, splitAt);
     }
 }
