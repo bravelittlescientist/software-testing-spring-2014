@@ -15,3 +15,6 @@ out/
 *.ear
 .project
 .settings
+
+# Submission
+*.zip
