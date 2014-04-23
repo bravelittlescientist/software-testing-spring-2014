@@ -4,4 +4,4 @@ Classwork for my Software Testing class. Will include various test frameworks (s
 
 # JUnit
 
-* name-tests : Some simple tests for methods pertaining to a name string.
+* name_tests : Some simple tests for methods pertaining to a name string.
